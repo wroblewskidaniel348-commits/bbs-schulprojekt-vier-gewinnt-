@@ -1,0 +1,119 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C++ Build (Vier Gewinnt)",
+            "type": "process",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-g",
+                "-I",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\include",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\main.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spiel.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spieler.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spielfeld.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Eingabe.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Dateien.cpp",
+                "-o",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\VierGewinnt.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
+                "env": {
+                    "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+                }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "C++ Build (Regeltests)",
+            "type": "process",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-g",
+                "-I",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\include",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\tests\\test_regeln.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spielfeld.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spieler.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Eingabe.cpp",
+                "-o",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\Regeltests.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
+                "env": {
+                    "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+                }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            }
+        },
+        {
+            "label": "Vier Gewinnt spielen (Build + Start)",
+            "type": "process",
+            "command": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\VierGewinnt.exe",
+            "dependsOn": "C++ Build (Vier Gewinnt)",
+            "dependsOrder": "sequence",
+            "options": {
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
+                "env": {
+                    "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true
+            }
+        },
+        {
+            "label": "Regeltests ausfuehren (Build + Test)",
+            "type": "process",
+            "command": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\Regeltests.exe",
+            "dependsOn": "C++ Build (Regeltests)",
+            "dependsOrder": "sequence",
+            "options": {
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
+                "env": {
+                    "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true
+            }
+        }
+    ]
+}

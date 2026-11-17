@@ -1,0 +1,51 @@
+DANIEL – VIER GEWINNT / VS-CODE BUILDFIX
+========================================
+
+Problem: Wenn der GitHub-Hauptordner in VS Code geoeffnet wird,
+verweisen die aeusseren .vscode-Konfigurationen faelschlich
+auf src/ direkt im Hauptordner. Tatsachlich liegt der Code in
+11-17-26-Vier_Gewinnt_Daniel_GitHub/src/.
+
+NUR DIESE DREI DATEIEN AENDERN SICH:
+  .vscode/tasks.json
+  .vscode/launch.json
+  .vscode/c_cpp_properties.json
+
+UNVERAENDERT:
+  src/, include/, tests/, docs/, data/, .vscode/ des inneren
+  Projektordners, alle Spielregeln und Texte im Programm.
+
+METHODE A: Am einfachsten – korrigierte Dateien kopieren
+1. GitHub-Repository herunterladen/klonen, ZIP vollstaendig entpacken.
+2. Aus diesem Fix-Paket nur den Ordner .vscode/ ins
+   HAUPTVERZEICHNIS des GitHub-Repositories kopieren.
+3. Die drei gleichnamigen Dateien ersetzen. Andere Dateien erhalten.
+4. Den GitHub-Hauptordner in VS Code mit Datei > Ordner oeffnen laden.
+5. Strg + Umschalt + B = Spiel bauen; F5 = Spiel debuggen.
+6. Terminal > Aufgabe ausfuehren > Regeltests ausfuehren (Build + Test).
+
+METHODE B: Originalformatierung exakt erhalten
+1. Fix-VSCode-Build.ps1 ins GitHub-Hauptverzeichnis kopieren.
+2. VS-Code-PowerShell-Terminal im Hauptverzeichnis oeffnen:
+   powershell -NoProfile -ExecutionPolicy Bypass -File .\Fix-VSCode-Build.ps1
+3. Das Skript aendert nur die Pfad-Praefixe in den drei Dateien,
+   keine sonstigen Inhalte. Es prueft die JSON-Dateien vor dem Schreiben.
+4. Nur .vscode/tasks.json, .vscode/launch.json und
+   .vscode/c_cpp_properties.json committen; Skript nicht mit hochladen.
+
+VORAUSSETZUNG:
+  C:\msys64\ucrt64\bin\g++.exe
+  C:\msys64\ucrt64\bin\gdb.exe
+  und die Microsoft-Erweiterung C/C++ fuer VS Code muessen existieren.
+  Falls MSYS2 nicht unter C:\msys64 liegt, muss der Compilerpfad
+  gesondert an den tatsaechlichen Installationsort angepasst werden.
+
+GitHub-Weboberflaeche: Repository > .vscode/ > Add file > Upload files;
+nur die drei korrigierten JSON-Dateien hochladen, danach committen.
+
+TESTSTATUS:
+  JSON-Struktur und referenzierte Projektpfade wurden geprueft.
+  Ein echter Windows/MSYS2-Build ist hier nicht moeglich;
+  erst am Zielrechner kann der Kompiliervorgang bestaetigt werden.
+  GitHub verweigerte einen direkten Schreibzugriff (HTTP 403),
+  daher muss der Fix vom Repo-Besitzer hochgeladen werden.
