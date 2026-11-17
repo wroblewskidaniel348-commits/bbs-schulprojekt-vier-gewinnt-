@@ -12,18 +12,18 @@
                 "-Wpedantic",
                 "-g",
                 "-I",
-                "${workspaceFolder}\\include",
-                "${workspaceFolder}\\src\\main.cpp",
-                "${workspaceFolder}\\src\\Spiel.cpp",
-                "${workspaceFolder}\\src\\Spieler.cpp",
-                "${workspaceFolder}\\src\\Spielfeld.cpp",
-                "${workspaceFolder}\\src\\Eingabe.cpp",
-                "${workspaceFolder}\\src\\Dateien.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\include",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\main.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spiel.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spieler.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spielfeld.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Eingabe.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Dateien.cpp",
                 "-o",
-                "${workspaceFolder}\\VierGewinnt.exe"
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\VierGewinnt.exe"
             ],
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
                 "env": {
                     "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
                 }
@@ -52,16 +52,16 @@
                 "-Wpedantic",
                 "-g",
                 "-I",
-                "${workspaceFolder}\\include",
-                "${workspaceFolder}\\tests\\test_regeln.cpp",
-                "${workspaceFolder}\\src\\Spielfeld.cpp",
-                "${workspaceFolder}\\src\\Spieler.cpp",
-                "${workspaceFolder}\\src\\Eingabe.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\include",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\tests\\test_regeln.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spielfeld.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Spieler.cpp",
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\src\\Eingabe.cpp",
                 "-o",
-                "${workspaceFolder}\\Regeltests.exe"
+                "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\Regeltests.exe"
             ],
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
                 "env": {
                     "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
                 }
@@ -78,11 +78,11 @@
         {
             "label": "Vier Gewinnt spielen (Build + Start)",
             "type": "process",
-            "command": "${workspaceFolder}\\VierGewinnt.exe",
+            "command": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\VierGewinnt.exe",
             "dependsOn": "C++ Build (Vier Gewinnt)",
             "dependsOrder": "sequence",
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
                 "env": {
                     "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
                 }
@@ -98,11 +98,11 @@
         {
             "label": "Regeltests ausfuehren (Build + Test)",
             "type": "process",
-            "command": "${workspaceFolder}\\Regeltests.exe",
+            "command": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\Regeltests.exe",
             "dependsOn": "C++ Build (Regeltests)",
             "dependsOrder": "sequence",
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
                 "env": {
                     "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
                 }

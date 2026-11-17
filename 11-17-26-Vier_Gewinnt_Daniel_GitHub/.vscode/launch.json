@@ -5,10 +5,10 @@
             "name": "Vier Gewinnt debuggen (GDB)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\VierGewinnt.exe",
+            "program": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\VierGewinnt.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
             "environment": [
                 {
                     "name": "PATH",
@@ -31,10 +31,10 @@
             "name": "Regeltests debuggen (GDB)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\Regeltests.exe",
+            "program": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub\\Regeltests.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}\\11-17-26-Vier_Gewinnt_Daniel_GitHub",
             "environment": [
                 {
                     "name": "PATH",
