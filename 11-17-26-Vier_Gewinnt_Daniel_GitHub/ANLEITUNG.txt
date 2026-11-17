@@ -1,0 +1,6 @@
+Dieses Archiv enthaelt den fehlenden .vscode Ordner.
+1) In den Ordner 11-17-26-Vier_Gewinnt_Daniel_GitHub entpacken.
+2) Kontrolle mit: Get-ChildItem -Force .vscode
+3) Strg+Shift+B -> C++ Build (Vier Gewinnt), dann F5 -> Vier Gewinnt debuggen (GDB).
+4) Fuer GitHub im inneren Projektordner: git add .vscode; git commit -m "VS Code Build und Debug korrigiert"; git push
+Bitte beim Entpacken keine vorhandenen Quellcode-Dateien ersetzen.
