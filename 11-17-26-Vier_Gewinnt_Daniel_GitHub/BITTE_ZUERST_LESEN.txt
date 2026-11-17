@@ -1,0 +1,29 @@
+VIER GEWINNT - DANIEL WROBLEWSKI
+
+WICHTIG FUER VS CODE (Windows + MSYS2):
+
+1. Diesen ZIP-Inhalt vollstaendig entpacken.
+2. In VS Code 'Datei > Arbeitsbereich aus Datei oeffnen' waehlen.
+3. Die Datei VierGewinnt.code-workspace oeffnen.
+4. Strg + Umschalt + B: C++ Build (Vier Gewinnt).
+5. F5: Vier Gewinnt debuggen (GDB).
+
+Benoetigt: C/C++-Erweiterung und MSYS2 UCRT64 mit g++.exe/gdb.exe
+unter C:\msys64\ucrt64\bin\.
+
+Wenn 'KI_Originalauftrag.txt:1: syntax error' erscheint,
+ist die falsche, dateibasierte Build-Aufgabe aktiv.
+Dann diesen Arbeitsbereich neu oeffnen und die korrekte Debug-
+Konfiguration auswaehlen. NICHT 'Debug Anyway' verwenden.
+
+Eine genaue Fehlerhilfe steht in START_HIER_VSCODE.md.
+Fuer GitHub siehe GITHUB_UPLOAD_ANLEITUNG.md.
+
+ALTERNATIV: VISUAL STUDIO COMMUNITY (nicht VS Code)
+
+- VierGewinnt.sln mit Visual Studio Community 2026 oeffnen.
+- 'Desktopentwicklung mit C++' muss installiert sein.
+- Strg + F5 druecken.
+
+WICHTIG: Keine .txt-Datei oder einzelne main.cpp oeffnen,
+sondern den kompletten Projektordner bzw. Arbeitsbereich.
