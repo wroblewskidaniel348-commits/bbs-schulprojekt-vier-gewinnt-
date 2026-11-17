@@ -1,0 +1,98 @@
+
+VIER GEWINNT | 2 SPIELER
+1 Neues Spiel
+2 Anzahl Spieler
+3 Namen eingeben
+4 Speichern
+5 Laden
+6 Highscore
+7 Fortsetzen
+0 Beenden
+Auswahl: Name Spieler 1: Name Spieler 2: 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Daniel (X) ist dran.
+Spalte; 0 Menue (Partie bleibt erhalten): Ungueltige Eingabe. Erlaubt: 0 bis 7.
+Spalte; 0 Menue (Partie bleibt erhalten): Ungueltige Eingabe. Erlaubt: 0 bis 7.
+Spalte; 0 Menue (Partie bleibt erhalten): 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | X  .  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Alex (O) ist dran.
+Spalte; 0 Menue (Partie bleibt erhalten): 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Daniel (X) ist dran.
+Spalte; 0 Menue (Partie bleibt erhalten): 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | X  .  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Alex (O) ist dran.
+Spalte; 0 Menue (Partie bleibt erhalten): 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Daniel (X) ist dran.
+Spalte; 0 Menue (Partie bleibt erhalten): 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | X  .  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Alex (O) ist dran.
+Spalte; 0 Menue (Partie bleibt erhalten): 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Daniel (X) ist dran.
+Spalte; 0 Menue (Partie bleibt erhalten): 
+ | .  .  .  .  .  .  .  |
+ | .  .  .  .  .  .  .  |
+ | X  .  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+ | X  O  .  .  .  .  .  |
+    1  2  3  4  5  6  7
+Daniel gewinnt!
+
+HIGHSCORE
+1. Daniel: 1
+
+VIER GEWINNT | 2 SPIELER
+1 Neues Spiel
+2 Anzahl Spieler
+3 Namen eingeben
+4 Speichern
+5 Laden
+6 Highscore
+7 Fortsetzen
+0 Beenden
+Auswahl: 
